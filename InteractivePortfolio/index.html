@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Portfolio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Nav -->
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactMeBtn">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="cvButton" href="AlisaChirita.CV.docx" download>CV</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+<div id="hero" class="hero-container p-5 text-center rounded-3">
+    <div class="hero-mask">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1>My Portfolio</h1>
+          <h4>Alisa Chirita</h4>
+          <p>Computing and IT Management Student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center position-absolute w-100" style="bottom: 20px;">
+    <a href="#intro" class="text-light">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+  
+
+  <!-- Intro  -->
+  <section id="intro" class="py-5 text-light" style="background-color: #2b2333;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Picture Column -->
+        <div class="col-md-4 text-center">
+          <img src="MyPic.jpg" alt="My Pic" class="rounded-circle mb-3 img-fluid" width="200">
+        </div>
+
+        <!-- me -->
+        <div class="col-md-8">
+            <h2 class="text-center"> <br> Alisa Chirita</h2>
+            <p class="text-center">Computing and IT Management Student</p>
+            <p>
+            Welcome to my portfolio! I am a student currently in the final year of my degree studying Computing and Information Technology Management at Technological University Dublin.
+            I have built a variety of skills throughout my degree and aim to only progress in my studies and understanding of the field. Over the years I have made a good foundation of 
+            understanding aspects such as Networking, Web Design, Scripting and Cloud Computing. <br> <br> With my previous years' work experience, I have also earned invaluable communication skills
+            and have worked on my punctuation and teamwork skills that progressively grow throughout the projects I have completed and continue to progress with.
+            I aim to continue to progress my knowledge and gain more hands-on practical work as I continue my studies and grow closer to completing my degree.
+            </p>
+            <p>
+            <button id="showHobbiesBtn" class="btn btn-secondary mt-3">Feel free to learn a little more about me.</button>
+            <button id="viewCvBtn" class="btn btn-secondary mt-3">View My CV</button>
+            </p>
+
+              <!-- CV Modal -->
+  <div id="cvModal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: #2b2333;">My CV</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="AlisaChirita.CV.pdf" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+            <!-- Hobbies -->
+            <div id="hobbiesSection" class="mt-4" style="display: none;">
+                <h3 class="text-center">Hobbies</h3>
+                <div class="row mt-3">
+                    
+                    <div class="col-md-4 text-center">
+                        <h4>Art</h4>
+                        <img src="web-design-brush-icon.png" alt="Art" class="hobby-img">
+                        <p>Metalwork woodwork and clay <br>
+                            Digital and traditional art.</p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                        <h4>Reading</h4>
+                        <img src="notebook-icon.png" alt="Reading" class="hobby-img">
+                        <p>Dream and art Journaling <br>
+                        Reading comics and kindle E books</p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                        <h4>Games Design</h4>
+                        <img src="gamepad-icon.png" alt="Games Design" class="hobby-img">
+                        <p>Using blender and unity <br>
+                        3D modeling and texturing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="text-center" style="color: white;">Education</h2>
+      <div id="educationCarousel" class="carousel slide mt-4" data-bs-ride="false">
+        <div class="carousel-inner" style="background-color: #343a40;">
+          
+          <div class="carousel-item active">
+            <h3 class="text-center" style="color: white;">Year 1</h3>
+            <ul class="list-unstyled">
+              <li>Software Development 1: B</li>
+              <li>Discrete Mathematics 1: B</li>
+              <li>Visual Design and User Experience: B</li>
+              <li>Critical Skills Development: A</li>
+              <li>Computer Architecture: B</li>
+              <li>Business & Information Systems : B</li>
+              <li>Software Development 2 : C</li>
+              <li>Systems Analysis : B-</li>
+              <li>Database Fundamentals : B+</li>
+              <li>Statistics : B-</li>
+              <li>Operating Systems Fundamentals: B</li>
+              <li>Social Media Communications : A</li>
+            </ul>
+          </div>
+          
+          <div class="carousel-item">
+            <h3 class="text-center" style="color: white;">Year 2</h3>
+            <ul class="list-unstyled">
+              <li>Software Quality Assurance and Testing: B-</li>
+              <li>Advanced Database Technologies: B-</li>
+              <li>Network Fundamentals: C</li>
+              <li>Client-Side Web Development: B-</li>
+              <li>Discrete Mathematics 2: B-</li>
+              <li>IT Scripting & Automation: C+</li>
+              <li>Project:B+</li>
+              <li>IT Services Management:C+</li>
+              <li>Information Security:B</li>
+              <li>Database Admin & Analysis:B+</li>
+              <li>Management Science:B</li>
+              <li>Routing & Switching Essentials: C</li>
+            </ul>
+          </div>
+          
+          <div class="carousel-item">
+            <h3 class="text-center" style="color: white;">Year 3</h3>
+            <ul class="list-unstyled">
+              <li>Cloud Services and Distributed Computing: C+</li>
+              <li>Advanced Routing & Switching: C</li>
+              <li>Server-Side Web Development: C+</li>
+              <li>Big Data Technologies: C</li>
+              <li>Operating Systems: C</li>
+              <li>Work Placement: PS</li>
+              <li>Innovation and Entrepreneurship: B </li>
+            </ul>
+          </div>
+          
+          <div class="carousel-item">
+            <h3 class="text-center" style="color: white;">Year 4</h3>
+            <ul class="list-unstyled">
+              <li>TBC</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Car -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- proj -->
+    <section id="projects" class="py-5">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Y2 proj -->
+              <div class="carousel-item active">
+                <div class="d-flex flex-column align-items-center">
+                  <h3>Year 2 Project</h3>
+                  <div class="text-center">
+                    <img src="trainproj.png" alt="Year 4 Project" class="img-fluid mb-3" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    <p class="text-center">Team project work involving the development of a Train Locator. Users could effectively access a website with up-to-date server pings related to a real time Supabase database. This database could be updated using its api key as a means of mqtt and linux. This project was built from scratch initially by making a .sh file and learning how to use google cloud mosquito containers such as the broker. A database was then made on supabase to populate it with information and was then linked to our vscode html file which could then be accessed and made presentable using css. This project required a lot of qualities from different parts of the current course that has been undergone.</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Y4 -->
+              <div class="carousel-item">
+                <div class="d-flex flex-column align-items-center">
+                  <h3>Year 4 Project</h3>
+                  <img src="y4project_optimized.png" alt="Year 4 Project" class="img-fluid mb-3" style="max-width: 100%; height: auto; border-radius: 8px;">
+                  <p class="text-center">This project will be focusing on the development of a Medical Education E-Library for hospital staff use.
+                    The goal of this project is to provide easy access to training materials and medical device specific safety
+                    documentation.
+                    This project will be addressing challenges such as training accessibility during night shifts,
+                    communications for the distribution of notifications and maintaining upkeep of resources on medical
+                    devices to keep up to date.
+                    The end result of this project will also help reduce paper waste, transitioning from hardcopy manuals to
+                    eco-friendly digital resources.
+                    </p>
+                </div>
+              </div>
+            </div>
+            <!-- Car -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+ <!-- Work Experience  -->
+<section id="work" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Work Experience</h2>
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p>My Work Experience Was provided by my work placement in my second semester of 3rd year. I was accecpted into the Center of Expertise in SAP and began my internship in January through August. 
+            This Internship was a great learning experience that greatly helped grow my skills and I was very grateful to have a place on my team.</p>
+        </div>
+        <div class="col-md-4 position-relative">
+          <img src="workex.jpg" alt="Work Experience" class="img-fluid rounded shadow">
+          <div class="work-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="text-white">SAP</h4>
+            <p class="text-white">My 2024 Work Experience in SAP COE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Hobby 2-->
+<section id="hobbies" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Hobbies</h2>
+      <div class="row text-center mt-4">
+       
+        <div class="col-md-3 position-relative">
+          <img src="Reverence.png" alt="Hobby 1" class="img-fluid rounded shadow">
+          <div class="hobby-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="text-white">Reverence</h4>
+            <p class="text-white">Digital Artwork Done on commission request from an individual</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 position-relative">
+          <img src="Illustrationsushi.png" alt="Hobby 2" class="img-fluid rounded shadow">
+          <div class="hobby-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="text-white">Feast</h4>
+            <p class="text-white">Digital artwork Done for a contest based on sushi</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 position-relative">
+          <img src="whale.jpg" alt="Hobby 3" class="img-fluid rounded shadow">
+          <div class="hobby-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="text-white">Nautical</h4>
+            <p class="text-white">Digital artwork of a whale and submerged area </p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 position-relative">
+          <img src="candle.jpg" alt="Hobby 4" class="img-fluid rounded shadow">
+          <div class="hobby-overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="text-white">Flicker</h4>
+            <p class="text-white">Acrylic paint traditional artwork of a candle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container text-center">
+        <button id="contactMeBtn" class="btn btn-primary">Contact Me</button>
+
+        <!-- Contact me -->
+        <div id="contactInfoModal" class="modal fade" tabindex="-1" aria-labelledby="contactInfoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactInfoModalLabel">Contact Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Email: alisachirita@gmail.com</p>
+                        <p>Phone: 0851025550</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links mt-4">
+            <p> View My Socials Here</p>
+            <a href="https://www.linkedin.com/in/alisa-chirita?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="me-3">
+                <img src="linkedin-square-icon.png" alt="LinkedIn" width="40" height="40">
+            </a>
+            <a href="https://www.facebook.com/share/15U3d3NPt3/" target="_blank" class="me-3">
+                <img src="facebook-app-round-icon.png" alt="Twitter" width="40" height="40">
+            </a>
+            <a href="https://github.com/AlisaChirita" target="_blank">
+                <img src="github-icon.png" alt="GitHub" width="40" height="40">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
